@@ -1,0 +1,11 @@
+<% content_for :page_title do  %>
+  Import Promotions
+<% end %>
+
+<fieldset class="field align-center">
+  <legend>Upload your csv file</legend>
+  <%= form_tag admin_import_promotions_path, multipart: true do%>
+    <%= file_field_tag :file %>
+    <%= submit_tag 'Import Promotions' %>
+  <% end %>
+</fieldset>
