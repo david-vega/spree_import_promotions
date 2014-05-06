@@ -1,0 +1,3 @@
+class Spree::ImportPromotion
+
+end
