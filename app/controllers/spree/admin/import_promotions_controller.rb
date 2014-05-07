@@ -8,7 +8,7 @@ class Spree::Admin::ImportPromotionsController < Spree::Admin::BaseController
     if !file || !valid_csv_extension?(file) || !valid_encoding?(file)
       flash_message = { error: 'File is invalid, please try again' }
     else
-      ImportPromotion.import_csv(file)
+      Spree::ImportPromotion.import_csv(file)
       flash_message = { success: 'Your import has been processed' }
     end
 
