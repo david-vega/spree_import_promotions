@@ -1,7 +1,15 @@
 SpreeImportPromotions
 =====================
 
-Introduction goes here.
+This extension is to import CSV files in order to create promotions.
+
+A raw example of a csv file
+
+```
+NAME,CODE,DESCRIPTION,USAGE LIMIT,STARTS AT,EXPIRES AT,ACTIONS,CALCULATOR,AMOUNT,CURRENCY
+Promotion1,FOOBAR123,Promotion1 Description,1,2014-05-01,2014-10-01,Create whole-order adjustment,Flat Rate,30,USD
+Promotion2,FOOBAR456,Promotion1 Description,1,2014-05-01,2014-10-01,Create whole-order adjustment,Flat Rate,30,USD
+```
 
 Installation
 ------------
